@@ -1,0 +1,15 @@
+.home {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: bisque;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  height: 20%;
+  background-color: rgb(202, 200, 196);
+}

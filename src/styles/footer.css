@@ -1,0 +1,20 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--backgroundDark);
+  height: 209px;
+}
+
+.footer img {
+  height: 40px;
+  width: 122px;
+  padding: 50px;
+}
+
+.footer p {
+  color: var(--FontColor1);
+  font-size: 20px;
+  margin: 0;
+}
