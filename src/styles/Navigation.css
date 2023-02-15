@@ -1,0 +1,16 @@
+.nav {
+  width: 309px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav a {
+  margin-left: 57px;
+  text-decoration: none;
+  color: var(--FontColor2);
+  font-size: 24px;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
