@@ -1,10 +1,14 @@
+import { Link } from "react-router-dom";
+import styles from './Error.module.css';
 
 function ErrorPage() {
   return (
-    <div>
-      <h1>Erreur 404</h1>
+    <div className={styles.error__box}>
+      <h1>404</h1>
+      <p>Oups! La page que vous demandez n'existe pas.</p>
+      <Link to={'/'}>Retourner sur la page d’accueil</Link >
     </div>
   )
-}
+};
 
 export default ErrorPage

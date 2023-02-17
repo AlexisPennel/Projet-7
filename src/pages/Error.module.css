@@ -1,0 +1,26 @@
+.error__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error__box h1,
+p,
+a {
+  color: var(--FontColor2);
+}
+
+.error__box h1 {
+  font-size: 20rem;
+  margin: 0;
+}
+
+.error__box p {
+  font-size: 2.5rem;
+  margin-bottom: 10%;
+}
+
+.error__box a {
+  font-size: 1.3rem;
+}
