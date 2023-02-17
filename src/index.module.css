@@ -1,20 +1,18 @@
 :root {
   --backgroundDark: #000000;
+  --backgroundLight: #f6f6f6;
   --FontColor1: #ffffff;
   --FontColor2: #ff6060;
   font-family: 'Montserrat', sans-serif;
 }
-
-body {
+html,
+body,
+#root {
   margin: 0;
-  height: 100%;
+  height: auto;
+  overflow-x: hidden;
   width: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Montserrat', sans-serif;
-}
-
-#root {
-  height: 100vh;
-  width: 100%;
 }

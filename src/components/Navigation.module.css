@@ -1,11 +1,11 @@
 .nav {
-  width: 309px;
+  width: 360px;
   display: flex;
   justify-content: flex-end;
 }
 
 .nav a {
-  margin-left: 57px;
+  margin-left: 80px;
   text-decoration: none;
   color: var(--FontColor2);
   font-size: 24px;

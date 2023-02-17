@@ -5,6 +5,7 @@
   align-items: center;
   background-color: var(--backgroundDark);
   height: 209px;
+  margin-top: 5%;
 }
 
 .footer img {
