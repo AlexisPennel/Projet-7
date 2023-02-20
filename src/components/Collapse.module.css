@@ -1,0 +1,40 @@
+.collapse__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 4rem;
+  background-color: var(--PrimaryColor);
+  border-radius: 10px;
+  margin-top: 5%;
+}
+
+.collapse__box h1 {
+  color: var(--FontColor1);
+  margin-left: 3%;
+  font-weight: 500;
+}
+
+.collapse__box img {
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+  margin-right: 3%;
+}
+
+.collapse__content {
+  width: 80%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--backgroundLight);
+  border-radius: 10px;
+}
+
+.collapse__content p {
+  margin-left: 3%;
+  font-size: 1.4rem;
+}
+
+/* Collapse small  */

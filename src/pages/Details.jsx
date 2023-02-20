@@ -1,8 +1,11 @@
+import Gallery from "../components/Gallery"
 
-function DetailsPage() {
+
+function DetailsPage(props) {
+
   return (
     <div>
-      <h1>Details</h1>
+      <Gallery />
     </div>
   )
 }

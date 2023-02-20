@@ -3,6 +3,7 @@
   --backgroundLight: #f6f6f6;
   --FontColor1: #ffffff;
   --FontColor2: #ff6060;
+  --PrimaryColor: #ff6060;
   font-family: 'Montserrat', sans-serif;
 }
 html,
@@ -15,4 +16,9 @@ body,
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Montserrat', sans-serif;
+}
+
+main {
+  margin-left: 10%;
+  margin-right: 10%;
 }

@@ -10,6 +10,14 @@ import jsonData from './data/logements.json'
 
 
 const getData = () => {
+    // let url = window.location.href;
+    // let url2 = url.split('/');
+    // let id = url2[4];
+    // const accomodationDatas = jsonData.find(element => element.id === id);
+    // console.log(accomodationDatas.title)
+
+
+
     try {
         return jsonData
     } catch (error) {
@@ -21,10 +29,10 @@ const getData = () => {
 const router = createBrowserRouter(
     createRoutesFromElements(
         <Route element={<BaseLayout />}>
-            <Route path='/' element={<HomePage />} loader={getData} />
-            <Route path='details/:id' element={<DetailsPage />} />
-            <Route path='apropos' element={<AboutPage />} />
-            <Route path='*' element={<ErrorPage />} />
+            <Route path='/' element={<HomePage />} loader={getData} errorElement={<ErrorPage />} />
+            <Route path='details/:id' element={<DetailsPage />} errorElement={<ErrorPage />} />
+            <Route path='apropos' element={<AboutPage />} errorElement={<ErrorPage />} />
+            <Route path='*' element={<ErrorPage />} errorElement={<ErrorPage />} />
         </Route>
     )
 );
