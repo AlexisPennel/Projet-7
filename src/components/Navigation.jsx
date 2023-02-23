@@ -1,11 +1,13 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import styles from './Navigation.module.css'
 
 const Navigation = () => {
+  const location = useLocation();
+
   return (
     <nav className={styles.nav}>
-      <Link to={'/'}>Accueil</Link>
-      <Link to={'/apropos'}>A propos</Link>
+      <Link to={'/'} className={location.pathname === '/' ? styles.activeLink : ''}>Accueil</Link>
+      <Link to={'/apropos'} className={location.pathname === '/apropos' ? styles.activeLink : ''}>A propos</Link>
     </nav>
   )
 }

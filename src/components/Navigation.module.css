@@ -8,9 +8,12 @@
   margin-left: 80px;
   text-decoration: none;
   color: var(--FontColor2);
-  font-size: 1.4rem;
 }
 
 .nav a:hover {
-  text-decoration: underline;
+  border-bottom: 2px solid var(--PrimaryColor);
+}
+
+.activeLink {
+  border-bottom: 2px solid var(--PrimaryColor);
 }
