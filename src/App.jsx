@@ -10,19 +10,7 @@ import jsonData from './data/logements.json'
 
 
 const getData = () => {
-    // let url = window.location.href;
-    // let url2 = url.split('/');
-    // let id = url2[4];
-    // const accomodationDatas = jsonData.find(element => element.id === id);
-    // console.log(accomodationDatas.title)
-
-
-
-    try {
-        return jsonData
-    } catch (error) {
-        alert(error)
-    }
+    return jsonData
 };
 
 

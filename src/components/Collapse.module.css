@@ -6,7 +6,7 @@
   height: 4rem;
   background-color: var(--PrimaryColor);
   border-radius: 10px;
-  margin-top: 5%;
+  margin-top: 3%;
 }
 
 .collapse__box h2 {
@@ -30,6 +30,7 @@
   align-items: center;
   background-color: var(--backgroundLight);
   border-radius: 10px;
+  color: var(--FontColor2);
 }
 
 .collapse__content p {
@@ -56,24 +57,19 @@
 
 .collapse__content__small p {
   font-size: 18px;
-  line-height: 26px;
+  line-height: 34px;
 }
 
 .collapse__array__small {
   width: 44rem;
-  height: auto;
-  display: flex;
-  align-items: center;
-  background-color: var(--backgroundLight);
-  border-radius: 10px;
-  color: var(--FontColor2);
+  justify-content: flex-start;
 }
 
 .collapse__array__small ul {
   list-style-type: none;
   font-size: 18px;
   font-weight: 500;
-  line-height: 26px;
+  line-height: 34px;
   padding: 0%;
   margin-left: 3%;
 }

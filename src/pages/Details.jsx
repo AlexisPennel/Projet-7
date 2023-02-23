@@ -17,7 +17,7 @@ function DetailsPage() {
 
   return (
     <>
-      <Gallery />
+      <Gallery pictures={productData.pictures} />
       <section className={styles.accommodationsInfo__box}>
         <AccommodationsInfo data={productData} />
       </section>

@@ -1,11 +1,11 @@
-.accommodationsInfo__box {
-  margin-bottom: 2%;
-}
-
 .accommodationsInfo__box h1 {
   font-size: 36px;
   margin: 0;
   color: var(--FontColor2);
+}
+
+.accommodationsInfo__box p {
+  margin-top: 3%;
 }
 
 .tags__box {
@@ -15,10 +15,10 @@
 
 .tags__box p {
   background-color: var(--PrimaryColor);
-  padding: 10px 15px 10px 15px;
-  border-radius: 16px;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 10px;
   color: var(--FontColor1);
-  margin-right: 1%;
+  margin-right: 0.5rem;
   font-size: 14px;
 }
 
@@ -38,7 +38,9 @@
 }
 
 .host__box p {
+  text-align: end;
   width: 100%;
+  margin-right: 7%;
 }
 
 .host__box img {
@@ -56,7 +58,6 @@
 }
 
 .host__rating__box img {
-  width: 36px;
-  height: 36px;
+  width: 2rem;
   margin: 2%;
 }

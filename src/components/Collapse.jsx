@@ -27,7 +27,7 @@ const Collapse = (props) => {
                     <h2>{props.title}</h2>
                     {CollapseOpen ? <img src={arrowUp} alt="" onClick={() => setCollapseOpen(false)} /> : <img src={arrowDown} alt="" onClick={() => setCollapseOpen(true)} />}
                 </div>
-                {CollapseOpen ? <div className={styles.collapse__array__small}>
+                {CollapseOpen ? <div className={`${styles.collapse__content} ${styles.collapse__array__small}`}>
                     <ul>
                         {props.array.map(equipments => (
                             <li>{equipments}</li>

@@ -1,8 +1,11 @@
+import styles from './Gallery.module.css'
+
 const Gallery = (props) => {
+    const pictures = props.pictures;
 
     return (
-        <section>
-            <h1>Gallery</h1>
+        <section className={styles.Gallery__box}>
+            <img src={pictures[0]} alt="" />
         </section>
     )
 };

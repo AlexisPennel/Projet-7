@@ -5,7 +5,6 @@ import starEmpty from '../images/starEmpty.svg'
 const AccommodationsInfo = (props) => {
     const data = props.data;
     const rating = data.rating;
-    console.log(rating)
     const range = [1, 2, 3, 4, 5];
 
     return (

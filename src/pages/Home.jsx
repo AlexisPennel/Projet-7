@@ -1,7 +1,7 @@
 import styles from './Home.module.css'
 import Banner from '../components/Banner'
 import bannerImage from '../images/Banner.jpg'
-import Accommodations from '../components/Accommodations'
+import AccommodationsCards from '../components/AccommodationsCards'
 import { useEffect } from 'react'
 
 
@@ -15,7 +15,7 @@ function HomePage() {
   return (
     <div className={styles.home}>
       <Banner image={bannerImage} title={'Chez vous, partout et ailleurs'} />
-      <Accommodations />
+      <AccommodationsCards />
     </div>
   )
 }

@@ -1,13 +1,13 @@
-import styles from './Accommodations.module.css'
+import styles from './AccommodationsCards.module.css'
 import { Link, useLoaderData } from 'react-router-dom';
 
-const Accommodations = () => {
-    const dataG = useLoaderData();
+const AccommodationsCards = () => {
+    const data = useLoaderData();
 
     return (
         <section className={styles.section__Accommodations}>
             <div className={styles.Accommodations__box}>
-                {dataG.map((logement) => (
+                {data.map((logement) => (
                     < Link to={`/details/${logement.id}`} key={`${logement.id}`} className={styles.Accommodations__cards} state={{ productData: logement }} >
                         <img src={logement.cover} alt={`logement ${logement.title}`} />
                         <h2>{logement.title}</h2>
@@ -21,4 +21,4 @@ const Accommodations = () => {
     )
 };
 
-export default Accommodations;
+export default AccommodationsCards;

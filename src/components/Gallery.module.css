@@ -1,0 +1,12 @@
+.Gallery__box {
+  width: 100%;
+  height: 20%;
+}
+
+.Gallery__box img {
+  width: 100%;
+  height: 30rem;
+  border-radius: 20px;
+  object-fit: cover;
+  margin-bottom: 2%;
+}
