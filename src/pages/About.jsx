@@ -2,8 +2,14 @@ import Banner from '../components/Banner'
 import Collapse from '../components/Collapse'
 import BannerAbout from '../images/BannerAbout.jpg'
 import styles from './About.module.css'
+import { useEffect } from 'react'
 
 function AboutPage() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
       <Banner image={BannerAbout} />

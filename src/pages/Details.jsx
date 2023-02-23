@@ -3,18 +3,25 @@ import { useLocation } from 'react-router-dom';
 import AccommodationsInfo from "../components/AccommodationsInfo";
 import styles from './Details.module.css'
 import Collapse from '../components/Collapse'
+import { useEffect } from "react";
 
 function DetailsPage() {
   const location = useLocation();
   const { productData } = location.state;
 
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+
   return (
     <>
       <Gallery />
-      <div className={styles.accommodationsInfo__box}>
+      <section className={styles.accommodationsInfo__box}>
         <AccommodationsInfo data={productData} />
-      </div>
-      <div className={styles.accommodationCollapse__section}>
+      </section>
+      <section className={styles.accommodationCollapse__section}>
         <div>
           <Collapse
             size={'small'}
@@ -27,7 +34,7 @@ function DetailsPage() {
             title={'Équipements'}
             array={productData.equipments} />
         </div>
-      </div>
+      </section>
     </>
   )
 }

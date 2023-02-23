@@ -35,19 +35,13 @@
 .collapse__content p {
   margin: 3%;
   font-size: 1.4rem;
+  line-height: 34px;
 }
 
 /* Collapse small  */
 
 .collapse__box__small {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 44rem;
-  height: 52px;
-  height: 4rem;
-  background-color: var(--PrimaryColor);
-  border-radius: 10px;
 }
 
 .collapse__box__small h2 {
@@ -56,25 +50,11 @@
   font-weight: 500;
 }
 
-.collapse__box__small img {
-  cursor: pointer;
-  width: 28px;
-  height: 28px;
-  margin-right: 3%;
-}
-
 .collapse__content__small {
   width: 44rem;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--backgroundLight);
-  border-radius: 10px;
 }
 
 .collapse__content__small p {
-  margin: 3%;
   font-size: 18px;
   line-height: 26px;
 }
