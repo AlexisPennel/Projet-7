@@ -3,7 +3,7 @@ import Banner from '../components/Banner'
 import bannerImage from '../images/Banner.jpg'
 import AccommodationsCards from '../components/AccommodationsCards'
 import { useEffect } from 'react'
-
+import { Helmet } from 'react-helmet';
 
 
 function HomePage() {
@@ -13,10 +13,16 @@ function HomePage() {
   }, []);
 
   return (
-    <div className={styles.home}>
-      <Banner image={bannerImage} title={'Chez vous, partout et ailleurs'} />
-      <AccommodationsCards />
-    </div>
+    <>
+      <Helmet>
+        <title>Kasa | Accueil</title>
+      </Helmet>
+      <div className={styles.home}>
+        <Banner image={bannerImage} title={'Chez vous, partout et ailleurs'} />
+        <AccommodationsCards />
+      </div>
+
+    </>
   )
 }
 

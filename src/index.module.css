@@ -6,20 +6,16 @@
   --PrimaryColor: #ff6060;
   font-family: 'Montserrat', sans-serif;
 }
+
 html,
-body,
-#root {
+body {
+  min-height: 100vh;
+  max-width: 100vw;
   margin: 0;
-  height: auto;
-  overflow-x: hidden;
-  width: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: 'Montserrat', sans-serif;
+  padding: 0;
 }
 
 main {
-  min-height: 100vh;
   margin-left: 10%;
   margin-right: 10%;
 }

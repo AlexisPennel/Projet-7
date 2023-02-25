@@ -4,6 +4,7 @@ import AccommodationsInfo from "../components/AccommodationsInfo";
 import styles from './Details.module.css'
 import Collapse from '../components/Collapse'
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 function DetailsPage() {
   const location = useLocation();
@@ -17,6 +18,9 @@ function DetailsPage() {
 
   return (
     <>
+      <Helmet>
+        <title>Kasa | details</title>
+      </Helmet>
       <Gallery pictures={productData.pictures} />
       <section className={styles.accommodationsInfo__box}>
         <AccommodationsInfo data={productData} />
