@@ -4,12 +4,12 @@ import AccommodationsInfo from "../components/AccommodationsInfo";
 import styles from './Details.module.css'
 import Collapse from '../components/Collapse'
 import { useEffect } from "react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 function DetailsPage() {
   const location = useLocation();
-  const { productData } = location.state;
-
+  const { detailsData } = location.state;
+  console.log(detailsData)
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -19,24 +19,18 @@ function DetailsPage() {
   return (
     <>
       <Helmet>
-        <title>Kasa | details</title>
+        <title>Kasa | {detailsData.title}</title>
       </Helmet>
-      <Gallery pictures={productData.pictures} />
+      <Gallery pictures={detailsData.pictures} />
       <section className={styles.accommodationsInfo__box}>
-        <AccommodationsInfo data={productData} />
+        <AccommodationsInfo infoData={detailsData} />
       </section>
       <section className={styles.accommodationCollapse__section}>
-        <div>
-          <Collapse
-            size={'small'}
-            title={'Description'}
-            content={productData.description} />
+        <div className={styles.collapse__box}>
+          <Collapse title={'Description'} content={detailsData.description} />
         </div>
-        <div>
-          <Collapse
-            size={'small'}
-            title={'Équipements'}
-            array={productData.equipments} />
+        <div className={styles.collapse__box}>
+          <Collapse title={'Équipements'} content={detailsData.equipments} />
         </div>
       </section>
     </>

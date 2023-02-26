@@ -11,9 +11,5 @@
 }
 
 .nav a:hover {
-  border-bottom: 2px solid var(--PrimaryColor);
-}
-
-.activeLink {
-  border-bottom: 2px solid var(--PrimaryColor);
+  text-decoration: underline;
 }

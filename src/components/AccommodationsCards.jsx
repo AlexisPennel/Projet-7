@@ -1,18 +1,16 @@
 import styles from './AccommodationsCards.module.css'
-import { Link, useLoaderData } from 'react-router-dom';
+import { useLoaderData } from 'react-router-dom';
+import Card from './Card';
 
 const AccommodationsCards = () => {
-    const data = useLoaderData();
+    const accommodationsData = useLoaderData();
+    // console.log(data)
 
     return (
         <section className={styles.section__Accommodations}>
             <div className={styles.Accommodations__box}>
-                {data.map((logement) => (
-                    < Link to={`/details/${logement.id}`} key={`${logement.id}`} className={styles.Accommodations__cards} state={{ productData: logement }} >
-                        <img src={logement.cover} alt={`logement ${logement.title}`} />
-                        <h2>{logement.title}</h2>
-                        <div className={styles.cards__filter}></div>
-                    </Link>
+                {accommodationsData.map((logement) => (
+                    <Card key={logement.id} id={logement.id} cover={logement.cover} title={logement.title} accommodationData={logement} />
                 ))
                 }
 

@@ -1,13 +1,19 @@
-import { Link, useLocation } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import styles from './Navigation.module.css'
 
 const Navigation = () => {
-  const location = useLocation();
+  let activeStyle = {
+    textDecoration: "underline",
+  };
 
   return (
     <nav className={styles.nav}>
-      <Link to={'/'} className={location.pathname === '/' ? styles.activeLink : ''}>Accueil</Link>
-      <Link to={'/apropos'} className={location.pathname === '/apropos' ? styles.activeLink : ''}>A propos</Link>
+      <NavLink to={'/'} style={({ isActive }) =>
+        isActive ? activeStyle : undefined
+      }>Accueil</NavLink>
+      <NavLink to={'/apropos'} style={({ isActive }) =>
+        isActive ? activeStyle : undefined
+      }>A propos</NavLink>
     </nav>
   )
 }

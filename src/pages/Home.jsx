@@ -3,8 +3,12 @@ import Banner from '../components/Banner'
 import bannerImage from '../images/Banner.jpg'
 import AccommodationsCards from '../components/AccommodationsCards'
 import { useEffect } from 'react'
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
+import jsonData from '../data/logements.json'
 
+const getAccommodationsData = () => {
+  return jsonData
+};
 
 function HomePage() {
 
@@ -21,9 +25,9 @@ function HomePage() {
         <Banner image={bannerImage} title={'Chez vous, partout et ailleurs'} />
         <AccommodationsCards />
       </div>
-
     </>
   )
 }
 
 export default HomePage
+export { getAccommodationsData };

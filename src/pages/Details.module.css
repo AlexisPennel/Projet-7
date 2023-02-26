@@ -11,3 +11,7 @@
   justify-content: space-between;
   margin-bottom: 5%;
 }
+
+.collapse__box {
+  width: 45%;
+}

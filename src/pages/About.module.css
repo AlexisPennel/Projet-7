@@ -1,9 +1,15 @@
+.collapse__section {
+  display: flex;
+  justify-content: center;
+}
+
 .collapse__box {
-  width: auto;
+  width: 80%;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 5%;
+  align-self: center;
 }
