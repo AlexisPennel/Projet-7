@@ -16,6 +16,10 @@
   width: 45%;
 }
 
+.collapse__box p {
+  font-size: 1.2rem !important;
+}
+
 p {
   font-size: 1.2rem !important;
 }
