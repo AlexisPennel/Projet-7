@@ -1,11 +1,10 @@
 .accommodationsInfo__box h1 {
-  font-size: 36px;
   margin: 0;
   color: var(--FontColor2);
 }
 
 .accommodationsInfo__box p {
-  margin-top: 3%;
+  margin-top: 2%;
 }
 
 .tags__box {
@@ -19,7 +18,7 @@
   border-radius: 10px;
   color: var(--FontColor1);
   margin-right: 0.5rem;
-  font-size: 14px;
+  font-size: 0.9rem !important;
 }
 
 .host__info {
@@ -60,4 +59,37 @@
 .host__rating__box img {
   width: 2rem;
   margin: 2%;
+}
+
+@media screen and (max-width: 1000px) {
+  .accommodationsInfo__box p {
+    font-size: 1.1rem !important;
+  }
+  .host__info {
+    width: 100%;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+  }
+
+  .host__rating__box {
+    width: 50%;
+    justify-content: flex-start;
+  }
+
+  .host__rating__box img {
+    width: 1.2rem;
+  }
+
+  .host__box img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .host__box p {
+    font-size: 1rem !important;
+  }
+
+  .tags__box p {
+    font-size: 0.8rem !important;
+  }
 }

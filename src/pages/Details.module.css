@@ -15,3 +15,25 @@
 .collapse__box {
   width: 45%;
 }
+
+p {
+  font-size: 1.2rem !important;
+}
+
+@media screen and (max-width: 1000px) {
+  .accommodationsInfo__box {
+    flex-direction: column;
+  }
+
+  .accommodationCollapse__section {
+    flex-direction: column;
+  }
+
+  .collapse__box {
+    width: 100%;
+  }
+
+  p {
+    font-size: 1rem !important;
+  }
+}

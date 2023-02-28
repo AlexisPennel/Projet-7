@@ -10,3 +10,9 @@
   object-fit: cover;
   margin-bottom: 2%;
 }
+
+@media screen and (max-width: 1000px) {
+  .Gallery__box img {
+    height: 15rem;
+  }
+}
