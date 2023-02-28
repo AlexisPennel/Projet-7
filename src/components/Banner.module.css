@@ -33,3 +33,23 @@
   background-color: black;
   opacity: 30%;
 }
+
+@media screen and (max-width: 1000px) {
+  .banner__box {
+    height: 8rem;
+    justify-content: flex-start;
+  }
+
+  .banner__box h1 {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    font-weight: 500;
+    width: 65%;
+    margin-left: 5%;
+  }
+
+  .banner__box__about {
+    height: 15rem;
+  }
+}

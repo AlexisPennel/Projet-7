@@ -46,3 +46,10 @@
   padding: 0%;
   margin-left: 3%;
 }
+
+@media screen and (max-width: 1000px) {
+  .collapse__box {
+    height: 3rem;
+    margin-top: 7%;
+  }
+}

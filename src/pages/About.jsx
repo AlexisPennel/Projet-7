@@ -31,7 +31,7 @@ function AboutPage() {
       </Helmet>
       <Banner image={BannerAbout} />
       <section className={styles.collapse__section}>
-        <div className={styles.collapse__box} >
+        <div className={styles.collapse__box__container} >
           {dataAbout.map((element, index) => (
             <Collapse key={index} title={element.title} content={element.content} />
           ))}

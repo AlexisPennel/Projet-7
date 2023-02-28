@@ -1,15 +1,25 @@
 .nav {
-  width: 360px;
+  width: 85%;
   display: flex;
   justify-content: flex-end;
 }
 
 .nav a {
-  margin-left: 80px;
+  margin-left: 7%;
   text-decoration: none;
   color: var(--FontColor2);
 }
 
 .nav a:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 500px) {
+  .nav {
+    align-items: center;
+  }
+
+  .nav a {
+    text-transform: uppercase;
+  }
 }

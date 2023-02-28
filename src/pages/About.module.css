@@ -1,15 +1,26 @@
 .collapse__section {
   display: flex;
   justify-content: center;
+  margin-bottom: 5%;
 }
 
-.collapse__box {
+.collapse__box__container {
   width: 80%;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 5%;
   align-self: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .collapse__box__container {
+    width: 100%;
+  }
+  .collapse__section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+  }
 }
