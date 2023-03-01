@@ -1,11 +1,7 @@
 import { Link } from "react-router-dom";
 import styles from './Error.module.css';
-import { useEffect } from 'react';
 
 function ErrorPage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   return (
     <div className={styles.error__box}>

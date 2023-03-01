@@ -2,7 +2,6 @@ import styles from './Home.module.css'
 import Banner from '../components/Banner'
 import bannerImage from '../images/Banner.jpg'
 import CardsSection from '../components/CardsSection'
-import { useEffect } from 'react'
 import { Helmet } from 'react-helmet-async';
 import jsonData from '../data/logements.json'
 
@@ -11,10 +10,6 @@ const getAccommodationsData = () => {
 };
 
 function HomePage() {
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   return (
     <>
