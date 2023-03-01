@@ -36,6 +36,7 @@ p {
 
 a {
   font-size: 1.5rem;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1000px) {
@@ -46,10 +47,13 @@ a {
   }
 
   h1 {
-    font-size: 1.7rem !important;
+    font-size: 1.5rem !important;
   }
 
-  h2,
+  h2 {
+    font-size: 1.1rem !important;
+  }
+
   p {
     font-size: 1rem !important;
   }

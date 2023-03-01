@@ -3,17 +3,28 @@ import { useLocation } from 'react-router-dom';
 import AccommodationsInfo from "../components/AccommodationsInfo";
 import styles from './Details.module.css'
 import Collapse from '../components/Collapse'
-import { Helmet } from "react-helmet-async";
+import { useEffect } from "react";
+import jsonData from '../data/logements.json'
+
+const getAccommodationDataById = (id) => {
+  const accommodationFind = jsonData.find(element => element.id === id);
+  const accommodationIndex = jsonData.indexOf(accommodationFind);
+  return jsonData[accommodationIndex];
+};
+
+
+
 
 function DetailsPage() {
   const location = useLocation();
   const { accommodationData } = location.state;
 
+  useEffect(() => {
+    document.title = `Kasa | ${accommodationData.title}`;
+  }, [accommodationData.title]);
+
   return (
     <>
-      <Helmet>
-        <title>Kasa | {accommodationData.title}</title>
-      </Helmet>
       <Gallery pictures={accommodationData.pictures} />
       <section className={styles.accommodationsInfo__box}>
         <AccommodationsInfo accommodationData={accommodationData} />
@@ -31,3 +42,4 @@ function DetailsPage() {
 }
 
 export default DetailsPage
+export { getAccommodationDataById };

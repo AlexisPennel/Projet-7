@@ -1,9 +1,8 @@
 import styles from './CardsSection.module.css'
-import { useLoaderData } from 'react-router-dom';
 import Card from './Card';
 
-const AccommodationsCards = () => {
-    const accommodationsData = useLoaderData();
+const CardsSection = ({ accommodationsData }) => {
+
 
     return (
         <section className={styles.section__Accommodations}>
@@ -18,4 +17,4 @@ const AccommodationsCards = () => {
     )
 };
 
-export default AccommodationsCards;
+export default CardsSection;

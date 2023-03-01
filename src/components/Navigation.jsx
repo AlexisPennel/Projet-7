@@ -2,17 +2,15 @@ import { NavLink } from 'react-router-dom'
 import styles from './Navigation.module.css'
 
 const Navigation = () => {
-  let activeStyle = {
-    textDecoration: "underline",
-  };
+
 
   return (
     <nav className={styles.nav}>
-      <NavLink to={'/'} style={({ isActive }) =>
-        isActive ? activeStyle : undefined
+      <NavLink to={'/'} className={({ isActive }) =>
+        isActive ? styles.activeStyle : undefined
       }>Accueil</NavLink>
-      <NavLink to={'/apropos'} style={({ isActive }) =>
-        isActive ? activeStyle : undefined
+      <NavLink to={'/apropos'} className={({ isActive }) =>
+        isActive ? styles.activeStyle : undefined
       }>A propos</NavLink>
     </nav>
   )

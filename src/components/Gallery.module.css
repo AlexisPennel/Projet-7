@@ -28,6 +28,7 @@
   width: 3%;
   margin-left: 2%;
   margin-right: 2%;
+  cursor: pointer;
 }
 
 .gallery__targetPoints {

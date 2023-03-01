@@ -10,6 +10,7 @@
 .tags__box {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .tags__box p {
@@ -62,9 +63,6 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .accommodationsInfo__box p {
-    font-size: 1.1rem !important;
-  }
   .host__info {
     width: 100%;
     flex-direction: row-reverse;

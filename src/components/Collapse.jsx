@@ -6,16 +6,20 @@ import { useState } from 'react';
 
 const Collapse = ({ title, content }) => {
 
-    const [CollapseOpen, setCollapseOpen] = useState(false);
-
+    const [collapseOpen, setCollapseOpen] = useState(false);
+    const handleClick = () => {
+        setCollapseOpen(!collapseOpen)
+    };
 
     return (
         <>
             <div className={styles.collapse__box}>
                 <h2>{title}</h2>
-                {CollapseOpen ? <img src={arrowUp} alt="" onClick={() => setCollapseOpen(false)} /> : <img src={arrowDown} alt="" onClick={() => setCollapseOpen(true)} />}
+                <img src={collapseOpen ? arrowUp : arrowDown} alt="" onClick={handleClick} />
+                {/* {CollapseOpen ? <img src={arrowUp} alt="" onClick={() => setCollapseOpen(false)} /> : <img src={arrowDown} alt="" onClick={() => setCollapseOpen(true)} />} */}
             </div>
-            {CollapseOpen ?
+            {collapseOpen && (
+
                 <div className={styles.collapse__content}>
                     {typeof content === "string" ? <p>{content}</p> :
                         <ul>
@@ -24,7 +28,8 @@ const Collapse = ({ title, content }) => {
                             ))}
                         </ul>
                     }
-                </div> : null}
+                </div>
+            )}
         </>
     )
 };

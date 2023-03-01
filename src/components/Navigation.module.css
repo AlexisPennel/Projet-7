@@ -6,7 +6,6 @@
 
 .nav a {
   margin-left: 7%;
-  text-decoration: none;
   color: var(--FontColor2);
 }
 
@@ -14,9 +13,13 @@
   text-decoration: underline;
 }
 
+.activeStyle {
+  text-decoration: underline;
+}
 @media screen and (max-width: 500px) {
   .nav {
     align-items: center;
+    margin-top: 2%;
   }
 
   .nav a {

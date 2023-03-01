@@ -2,8 +2,8 @@ import Banner from '../components/Banner'
 import Collapse from '../components/Collapse'
 import BannerAbout from '../images/BannerAbout.jpg'
 import styles from './About.module.css'
-import { Helmet } from 'react-helmet-async'
 import { useLoaderData } from 'react-router-dom'
+import { useEffect } from 'react'
 
 const getAboutData = () => {
   const dataAbout = [
@@ -19,11 +19,12 @@ const getAboutData = () => {
 function AboutPage() {
   const dataAbout = useLoaderData();
 
+  useEffect(() => {
+    document.title = `Kasa | A propos`;
+  }, []);
+
   return (
     <>
-      <Helmet>
-        <title>Kasa | A propos </title>
-      </Helmet>
       <Banner image={BannerAbout} />
       <section className={styles.collapse__section}>
         <div className={styles.collapse__box__container} >

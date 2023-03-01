@@ -14,6 +14,10 @@
   align-self: center;
 }
 
+.collapse__box__container p {
+  font-size: 1.5rem !important;
+}
+
 @media screen and (max-width: 1000px) {
   .collapse__box__container {
     width: 100%;
@@ -22,5 +26,9 @@
     display: flex;
     justify-content: center;
     margin-bottom: 10%;
+  }
+
+  .collapse__box__container p {
+    font-size: 1rem !important;
   }
 }
