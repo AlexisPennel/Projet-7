@@ -7,23 +7,23 @@ import { Helmet } from "react-helmet-async";
 
 function DetailsPage() {
   const location = useLocation();
-  const { detailsData } = location.state;
+  const { accommodationData } = location.state;
 
   return (
     <>
       <Helmet>
-        <title>Kasa | {detailsData.title}</title>
+        <title>Kasa | {accommodationData.title}</title>
       </Helmet>
-      <Gallery pictures={detailsData.pictures} />
+      <Gallery pictures={accommodationData.pictures} />
       <section className={styles.accommodationsInfo__box}>
-        <AccommodationsInfo infoData={detailsData} />
+        <AccommodationsInfo accommodationData={accommodationData} />
       </section>
       <section className={styles.accommodationCollapse__section}>
         <div className={styles.collapse__box}>
-          <Collapse title={'Description'} content={detailsData.description} />
+          <Collapse title={'Description'} content={accommodationData.description} />
         </div>
         <div className={styles.collapse__box}>
-          <Collapse title={'Équipements'} content={detailsData.equipments} />
+          <Collapse title={'Équipements'} content={accommodationData.equipments} />
         </div>
       </section>
     </>
