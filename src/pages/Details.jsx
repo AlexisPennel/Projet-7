@@ -1,5 +1,5 @@
 import Gallery from "../components/Gallery"
-import { useLocation } from 'react-router-dom';
+import { useLoaderData } from 'react-router-dom';
 import AccommodationsInfo from "../components/AccommodationsInfo";
 import styles from './Details.module.css'
 import Collapse from '../components/Collapse'
@@ -13,11 +13,8 @@ const getAccommodationDataById = (id) => {
 };
 
 
-
-
 function DetailsPage() {
-  const location = useLocation();
-  const { accommodationData } = location.state;
+  const accommodationData = useLoaderData();
 
   useEffect(() => {
     document.title = `Kasa | ${accommodationData.title}`;
