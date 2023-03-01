@@ -9,7 +9,6 @@ import { Helmet } from "react-helmet-async";
 function DetailsPage() {
   const location = useLocation();
   const { detailsData } = location.state;
-  console.log(detailsData)
 
   useEffect(() => {
     window.scrollTo(0, 0);

@@ -1,10 +1,9 @@
-import styles from './AccommodationsCards.module.css'
+import styles from './CardsSection.module.css'
 import { useLoaderData } from 'react-router-dom';
 import Card from './Card';
 
 const AccommodationsCards = () => {
     const accommodationsData = useLoaderData();
-    // console.log(data)
 
     return (
         <section className={styles.section__Accommodations}>

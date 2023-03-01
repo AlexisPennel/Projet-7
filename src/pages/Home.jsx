@@ -1,7 +1,7 @@
 import styles from './Home.module.css'
 import Banner from '../components/Banner'
 import bannerImage from '../images/Banner.jpg'
-import AccommodationsCards from '../components/AccommodationsCards'
+import CardsSection from '../components/CardsSection'
 import { useEffect } from 'react'
 import { Helmet } from 'react-helmet-async';
 import jsonData from '../data/logements.json'
@@ -23,7 +23,7 @@ function HomePage() {
       </Helmet>
       <div className={styles.home}>
         <Banner image={bannerImage} title={'Chez vous, partout et ailleurs'} />
-        <AccommodationsCards />
+        <CardsSection />
       </div>
     </>
   )

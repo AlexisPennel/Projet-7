@@ -3,7 +3,7 @@ import styles from './Card.module.css';
 
 
 const Card = ({ id, cover, title, accommodationData }) => {
-    console.log(accommodationData);
+
     return (
         < NavLink to={`/details/${id}`} key={`${id}`} className={styles.Accommodations__cards} state={{ detailsData: accommodationData }} >
             <img src={cover} alt={`logement ${title}`} />
