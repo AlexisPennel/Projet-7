@@ -1,16 +1,18 @@
 .gallery__box {
   width: 100%;
-  height: 20%;
-  display: grid;
+  height: 35rem;
+  display: flex;
+  flex-direction: row;
   grid-template-columns: 1fr;
   justify-content: center;
   align-items: center;
   margin-bottom: 2%;
+  overflow: hidden;
 }
 
 .gallery__box img {
   width: 100%;
-  height: 30rem;
+  height: 35rem;
   border-radius: 20px;
   object-fit: cover;
 }
@@ -37,6 +39,20 @@
   align-self: flex-end;
   margin-bottom: 1%;
   color: var(--FontColor1);
+}
+
+.gallery__pictures__box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.picture__active {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 1000px) {

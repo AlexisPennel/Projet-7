@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import styles from './Card.module.css';
 
 
-const Card = ({ id, cover, title, accommodationData }) => {
+const Card = ({ id, cover, title }) => {
 
     return (
         < Link to={`/details/${id}`} className={styles.Accommodations__cards}  >

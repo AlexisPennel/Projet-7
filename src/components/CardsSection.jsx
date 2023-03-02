@@ -8,7 +8,7 @@ const CardsSection = ({ accommodationsData }) => {
         <section className={styles.section__Accommodations}>
             <div className={styles.Accommodations__box}>
                 {accommodationsData.map((logement) => (
-                    <Card key={logement.id} id={logement.id} cover={logement.cover} title={logement.title} accommodationData={logement} />
+                    <Card key={logement.id} id={logement.id} cover={logement.cover} title={logement.title} />
                 ))
                 }
 
