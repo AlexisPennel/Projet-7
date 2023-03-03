@@ -1,10 +1,11 @@
-import styles from './Gallery.module.css'
+import styles from './GallerySection.module.css'
 import arrowLeft from '../images/arrowLeft.svg';
 import arrowRight from '../images/arrowRight.svg';
 import { useState } from 'react';
 
 
-const Gallery = ({ pictures }) => {
+const GallerySection = ({ pictures }) => {
+
     const [current, setCurrent] = useState(0);
     const length = pictures.length;
 
@@ -34,10 +35,8 @@ const Gallery = ({ pictures }) => {
                 {pictures.map((pictures, index) => {
                     return (
                         <>
-
-                            <div key={index} className={index === current ? styles.picture__active : null}>
-                                {index === current && (
-                                    <img src={pictures} alt='' />)}
+                            <div key={index} className={index === current ? styles.picture__active : styles.picture__inactive}>
+                                <img src={pictures} alt='' />
                             </div>
                         </>
                     )
@@ -95,4 +94,4 @@ const Gallery = ({ pictures }) => {
     // )
 };
 
-export default Gallery;
+export default GallerySection;

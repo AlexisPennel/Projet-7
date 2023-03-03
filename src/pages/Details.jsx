@@ -1,10 +1,10 @@
-import Gallery from "../components/Gallery"
 import { useLoaderData } from 'react-router-dom';
 import AccommodationsInfo from "../components/AccommodationsInfo";
 import styles from './Details.module.css'
 import Collapse from '../components/Collapse'
 import { useEffect } from "react";
 import jsonData from '../data/logements.json'
+import GallerySection from "../components/GallerySection";
 
 const getAccommodationDataById = (id) => {
   const accommodationFind = jsonData.find(element => element.id === id);
@@ -22,7 +22,7 @@ function DetailsPage() {
 
   return (
     <>
-      <Gallery pictures={accommodationData.pictures} />
+      <GallerySection pictures={accommodationData.pictures} />
       <section className={styles.accommodationsInfo__box}>
         <AccommodationsInfo accommodationData={accommodationData} />
       </section>

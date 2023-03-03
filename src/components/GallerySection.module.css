@@ -49,6 +49,14 @@
   align-items: flex-end;
 }
 
+.picture__inactive {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 0;
+  object-fit: cover;
+}
+
 .picture__active {
   display: flex;
   justify-content: flex-start;
