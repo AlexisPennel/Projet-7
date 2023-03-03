@@ -20,6 +20,10 @@ const Gallery = ({ pictures }) => {
 
     };
 
+    const switchPicture = (index) => {
+        setCurrent(index)
+    }
+
     return (
         <section className={styles.gallery__box}>
             <div className={styles.gallery__arrows__box}>
@@ -29,11 +33,24 @@ const Gallery = ({ pictures }) => {
             <div className={styles.gallery__pictures__box}>
                 {pictures.map((pictures, index) => {
                     return (
-                        <div key={index} className={index === current ? styles.picture__active : null}>
-                            {index === current && (<img src={pictures} alt='' />)}
-                        </div>
+                        <>
+
+                            <div key={index} className={index === current ? styles.picture__active : null}>
+                                {index === current && (
+                                    <img src={pictures} alt='' />)}
+                            </div>
+                        </>
                     )
                 })}
+
+                <div className={styles.bulletPoints__box}>
+                    {pictures.map((pictures, index) => {
+                        return (
+                            <div key={index} className={index === current ? styles.bullet__points__active : styles.bullet__points} onClick={() => switchPicture(index)}></div>
+                        )
+                    })}
+                </div>
+
             </div>
             <p className={styles.gallery__targetPoints}>{current + 1} / {length}</p>
         </section>
