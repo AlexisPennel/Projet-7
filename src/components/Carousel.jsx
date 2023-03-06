@@ -15,7 +15,6 @@ const Carousel = ({ pictures }) => {
             setBulletDisplay(false);
             return
         }
-        console.log('yes')
     };
 
     // Appel de la fonction de vérification du nombre de photos au render
@@ -46,11 +45,10 @@ const Carousel = ({ pictures }) => {
             <div className={styles.pictures__box}>
                 {pictures.map((pictures, index) => {
                     return (
-                        <>
-                            <div key={index} className={index === current ? styles.picture__active : styles.picture__inactive}>
-                                <img src={pictures} alt='' />
-                            </div>
-                        </>
+                        <div key={index} className={index === current ? styles.picture__active : styles.picture__inactive}>
+                            <img src={pictures} alt='' />
+                        </div>
+
                     )
                 })}
             </div>
