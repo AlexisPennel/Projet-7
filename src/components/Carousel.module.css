@@ -1,23 +1,30 @@
-.gallery__box {
+.section {
   width: 100%;
   height: 35rem;
   display: flex;
-  flex-direction: row;
-  grid-template-columns: 1fr;
+  /* flex-direction: row; */
   justify-content: center;
   align-items: center;
   margin-bottom: 2%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
-.gallery__box img {
+.section img {
   width: 100%;
   height: 35rem;
   border-radius: 20px;
   object-fit: cover;
 }
 
-.gallery__arrows__box {
+.pictures__box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.arrows__box {
   position: absolute;
   width: 80%;
   display: flex;
@@ -25,7 +32,7 @@
   align-items: center;
 }
 
-.gallery__arrows__box img {
+.arrows__box img {
   height: 4rem;
   width: 3%;
   margin-left: 2%;
@@ -33,20 +40,12 @@
   cursor: pointer;
 }
 
-.gallery__targetPoints {
+.targetNumbers {
   position: absolute;
   justify-self: center;
   align-self: flex-end;
   margin-bottom: 1%;
   color: var(--FontColor1);
-}
-
-.gallery__pictures__box {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-end;
 }
 
 .picture__inactive {
@@ -55,6 +54,7 @@
   align-items: center;
   width: 0;
   object-fit: cover;
+  opacity: 0;
 }
 
 .picture__active {
@@ -63,6 +63,8 @@
   align-items: center;
   width: 100%;
   object-fit: cover;
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
 }
 
 .bulletPoints__box {
@@ -71,9 +73,10 @@
   margin-bottom: 3%;
   width: 20%;
   justify-content: space-evenly;
+  align-self: flex-end;
 }
 
-.bullet__points {
+.bulletPoints {
   border-radius: 50%;
   background-color: white;
   width: 1rem;
@@ -81,7 +84,7 @@
   cursor: pointer;
 }
 
-.bullet__points__active {
+.bulletPoints__active {
   border-radius: 50%;
   background-color: white;
   width: 1rem;
@@ -91,7 +94,7 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .gallery__box img {
+  .carousel__box img {
     height: 15rem;
   }
 }

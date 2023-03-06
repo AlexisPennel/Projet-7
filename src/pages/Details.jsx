@@ -4,7 +4,7 @@ import styles from './Details.module.css'
 import Collapse from '../components/Collapse'
 import { useEffect } from "react";
 import jsonData from '../data/logements.json'
-import GallerySection from "../components/GallerySection";
+import Carousel from "../components/Carousel";
 
 const getAccommodationDataById = (id) => {
   const accommodationFind = jsonData.find(element => element.id === id);
@@ -22,7 +22,7 @@ function DetailsPage() {
 
   return (
     <>
-      <GallerySection pictures={accommodationData.pictures} />
+      <Carousel pictures={accommodationData.pictures} />
       <section className={styles.accommodationsInfo__box}>
         <AccommodationsInfo accommodationData={accommodationData} />
       </section>
