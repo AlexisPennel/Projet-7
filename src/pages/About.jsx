@@ -27,7 +27,7 @@ function AboutPage() {
     <>
       <Banner image={BannerAbout} />
       <section className={styles.collapse__section}>
-        <div className={styles.collapse__box__container} >
+        <div className={styles.collapse__container} >
           {dataAbout.map((element, index) => (
             <Collapse key={index} title={element.title} content={element.content} />
           ))}

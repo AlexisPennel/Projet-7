@@ -4,7 +4,7 @@ import Navigation from './Navigation'
 
 const Header = () => {
   return (
-    <header className={styles.header}>
+    <header className={styles.container}>
       <img src={logo} alt="" />
       <Navigation />
     </header>

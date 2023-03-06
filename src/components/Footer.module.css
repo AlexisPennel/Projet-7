@@ -1,4 +1,4 @@
-.footer {
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,23 +7,23 @@
   height: 20%;
 }
 
-.footer img {
+.container img {
   height: 40px;
   width: 122px;
   padding: 50px;
 }
 
-.footer p {
+.container p {
   color: var(--FontColor1);
   font-size: 20px;
 }
 
 @media screen and (max-width: 1000px) {
-  .footer {
+  .container {
     height: 10rem;
   }
 
-  .footer img {
+  .container img {
     padding: 20px;
   }
 }

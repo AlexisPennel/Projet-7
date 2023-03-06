@@ -5,7 +5,7 @@ const Navigation = () => {
 
 
   return (
-    <nav className={styles.nav}>
+    <nav className={styles.container}>
       <NavLink to={'/'} className={({ isActive }) =>
         isActive ? styles.activeStyle : undefined
       }>Accueil</NavLink>

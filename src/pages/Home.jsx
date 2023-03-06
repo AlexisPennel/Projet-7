@@ -20,10 +20,10 @@ function HomePage() {
 
   return (
     <>
-      <div className={styles.home}>
+      <section className={styles.container}>
         <Banner image={bannerImage} title={'Chez vous, partout et ailleurs'} />
         <CardsSection accommodationsData={accommodationsData} />
-      </div>
+      </section>
     </>
   )
 }

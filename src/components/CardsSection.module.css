@@ -1,4 +1,4 @@
-.section__Accommodations {
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,7 +10,7 @@
   background-color: var(--backgroundLight);
 }
 
-.Accommodations__box {
+.accommodations__container {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -24,11 +24,11 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .section__Accommodations {
+  .container {
     background-color: white;
   }
 
-  .Accommodations__box {
+  .accommodations__container {
     width: 100%;
     display: flex;
     flex-direction: column;

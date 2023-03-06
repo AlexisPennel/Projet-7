@@ -4,7 +4,7 @@ import styles from './Tag.module.css';
 const Tag = ({ tagsData }) => {
     return (
         <>
-            <div className={styles.tags__box}>
+            <div className={styles.container}>
                 {tagsData.map((element, index) => (
                     <p key={index}>{element}</p>
                 ))}

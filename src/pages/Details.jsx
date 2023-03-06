@@ -23,14 +23,14 @@ function DetailsPage() {
   return (
     <>
       <Carousel pictures={accommodationData.pictures} />
-      <section className={styles.accommodationsInfo__box}>
+      <section className={styles.accommodationsInfo__section}>
         <AccommodationsInfo accommodationData={accommodationData} />
       </section>
       <section className={styles.accommodationCollapse__section}>
-        <div className={styles.collapse__box}>
+        <div className={styles.collapse__container}>
           <Collapse title={'Description'} content={accommodationData.description} />
         </div>
-        <div className={styles.collapse__box}>
+        <div className={styles.collapse__container}>
           <Collapse title={'Équipements'} content={accommodationData.equipments} />
         </div>
       </section>

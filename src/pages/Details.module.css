@@ -1,4 +1,4 @@
-.accommodationsInfo__box {
+.accommodationsInfo__section {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -12,20 +12,16 @@
   margin-bottom: 5%;
 }
 
-.collapse__box {
+.collapse__container {
   width: 45%;
 }
-
-/* .collapse__box p {
-  font-size: 1.2rem !important;
-} */
 
 p {
   font-size: 1.2rem !important;
 }
 
 @media screen and (max-width: 1000px) {
-  .accommodationsInfo__box {
+  .accommodationsInfo__section {
     flex-direction: column;
   }
 
@@ -33,7 +29,7 @@ p {
     flex-direction: column;
   }
 
-  .collapse__box {
+  .collapse__container {
     width: 100%;
   }
 

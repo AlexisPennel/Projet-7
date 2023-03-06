@@ -8,7 +8,7 @@ const Rating = ({ ratingData }) => {
 
     return (
 
-        <div className={styles.host__rating__box}>
+        <div className={styles.container}>
             {range.map((rangeElem, index) =>
                 ratingData >= rangeElem ? <img src={starFull} alt='' key={index}></img> : <img src={starEmpty} alt='' key={index}></img>
             )}

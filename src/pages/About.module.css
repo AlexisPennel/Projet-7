@@ -4,7 +4,7 @@
   margin-bottom: 5%;
 }
 
-.collapse__box__container {
+.collapse__container {
   width: 80%;
   height: auto;
   display: flex;
@@ -14,12 +14,12 @@
   align-self: center;
 }
 
-.collapse__box__container p {
+.collapse__container p {
   font-size: 1.5rem !important;
 }
 
 @media screen and (max-width: 1000px) {
-  .collapse__box__container {
+  .collapse__container {
     width: 100%;
   }
   .collapse__section {
@@ -28,7 +28,7 @@
     margin-bottom: 10%;
   }
 
-  .collapse__box__container p {
+  .collapse__container p {
     font-size: 1rem !important;
   }
 }

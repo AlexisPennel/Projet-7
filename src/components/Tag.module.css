@@ -1,10 +1,10 @@
-.tags__box {
+.container {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
 }
 
-.tags__box p {
+.container p {
   background-color: var(--PrimaryColor);
   padding: 0.5rem 1rem 0.5rem 1rem;
   border-radius: 10px;
@@ -14,7 +14,7 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .tags__box p {
+  .container p {
     font-size: 0.8rem !important;
     padding: 0.3rem 0.8rem 0.3rem 0.8rem;
   }

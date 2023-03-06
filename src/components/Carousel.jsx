@@ -42,7 +42,7 @@ const Carousel = ({ pictures }) => {
 
     return (
         <section className={styles.section}>
-            <div className={styles.pictures__box}>
+            <div className={styles.pictures__container}>
                 {pictures.map((pictures, index) => {
                     return (
                         <div key={index} className={index === current ? styles.picture__active : styles.picture__inactive}>
@@ -53,12 +53,12 @@ const Carousel = ({ pictures }) => {
                 })}
             </div>
 
-            {bulletDisplay && <div className={styles.arrows__box}>
+            {bulletDisplay && <div className={styles.arrows__container}>
                 <img src={arrowLeft} alt="" onClick={handlePrev} />
                 <img src={arrowRight} alt="" onClick={handleNext} />
             </div>}
 
-            {bulletDisplay && <div className={styles.bulletPoints__box}>
+            {bulletDisplay && <div className={styles.bulletPoints__container}>
                 {pictures.map((pictures, index) => {
                     return (
                         <div key={index} className={index === current ? styles.bulletPoints__active : styles.bulletPoints} onClick={() => switchPicture(index)}></div>

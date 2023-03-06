@@ -13,14 +13,12 @@ const Collapse = ({ title, content }) => {
 
     return (
         <>
-            <div className={styles.collapse__box}>
+            <div className={styles.container}>
                 <h2>{title}</h2>
                 <img src={collapseOpen ? arrowUp : arrowDown} alt="" onClick={handleClick} />
-                {/* {CollapseOpen ? <img src={arrowUp} alt="" onClick={() => setCollapseOpen(false)} /> : <img src={arrowDown} alt="" onClick={() => setCollapseOpen(true)} />} */}
             </div>
             {collapseOpen && (
-
-                <div className={styles.collapse__content}>
+                <div className={styles.content}>
                     {typeof content === "string" ? <p>{content}</p> :
                         <ul>
                             {content.map((element, index) => (
