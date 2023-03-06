@@ -38,6 +38,7 @@
   .banner__box {
     height: 8rem;
     justify-content: flex-start;
+    border-radius: 15px;
   }
 
   .banner__box h1 {
@@ -47,6 +48,10 @@
     font-weight: 500;
     width: 76%;
     margin-left: 5%;
+  }
+
+  .banner__box img {
+    border-radius: 15px;
   }
 
   .banner__box__about {

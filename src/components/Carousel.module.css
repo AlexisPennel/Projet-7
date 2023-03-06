@@ -96,11 +96,12 @@
 
 @media screen and (max-width: 1000px) {
   .section {
-    height: 20rem;
+    height: 17rem;
   }
 
   .section img {
-    height: 20rem;
+    height: 17rem;
+    border-radius: 15px;
   }
 
   .arrows__box {

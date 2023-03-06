@@ -50,6 +50,11 @@
   .collapse__box {
     height: 2.5rem;
     margin-top: 7%;
+    border-radius: 5px;
+  }
+
+  .collapse__content {
+    border-radius: 5px;
   }
 
   .collapse__content p {

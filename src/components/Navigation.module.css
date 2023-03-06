@@ -24,5 +24,6 @@
 
   .nav a {
     text-transform: uppercase;
+    margin-right: 2%;
   }
 }
