@@ -6,7 +6,7 @@ const Card = ({ id, cover, title }) => {
 
     return (
         < Link to={`/details/${id}`} className={styles.Accommodations__cards}  >
-            <img src={cover} alt={`logement ${title}`} />
+            <img src={cover} alt={title} />
             <h2>{title}</h2>
             <div className={styles.cards__filter}></div>
         </Link>

@@ -14,7 +14,7 @@ const AccommodationsInfo = ({ accommodationData }) => {
             <div className={styles.host__info}>
                 <div className={styles.host__info__container}>
                     <p>{accommodationData.host.name}</p>
-                    <img src={accommodationData.host.picture} alt="" />
+                    <img src={accommodationData.host.picture} alt={accommodationData.host.name} />
                 </div>
                 <Rating ratingData={accommodationData.rating} />
             </div>

@@ -10,7 +10,7 @@ const Rating = ({ ratingData }) => {
 
         <div className={styles.container}>
             {range.map((rangeElem, index) =>
-                ratingData >= rangeElem ? <img src={starFull} alt='' key={index}></img> : <img src={starEmpty} alt='' key={index}></img>
+                <img src={ratingData >= rangeElem ? starFull : starEmpty} alt='star' key={index}></img>
             )}
         </div>
     )

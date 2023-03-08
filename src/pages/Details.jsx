@@ -22,7 +22,7 @@ function DetailsPage() {
 
   return (
     <>
-      <Carousel pictures={accommodationData.pictures} />
+      <Carousel pictures={accommodationData.pictures} title={accommodationData.title} />
       <section className={styles.accommodationsInfo__section}>
         <AccommodationsInfo accommodationData={accommodationData} />
       </section>

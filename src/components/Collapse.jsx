@@ -16,7 +16,7 @@ const Collapse = ({ title, content }) => {
         <>
             <div className={styles.container}>
                 <h2>{title}</h2>
-                <img src={collapseOpen ? arrowUp : arrowDown} alt="" onClick={handleClick} />
+                <img src={collapseOpen ? arrowUp : arrowDown} alt="arrow" onClick={handleClick} />
             </div>
             {collapseOpen && (
                 <div className={styles.content}>

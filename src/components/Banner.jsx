@@ -8,7 +8,7 @@ const Banner = ({ title, image }) => {
   return (
     <section className={page.pathname === '/apropos' ? `${styles.container} ${styles.container__about}` : styles.container}>
       {title && <h1>{title}</h1>}
-      <img src={image} alt="" />
+      <img src={image} alt="banner Kasa" />
       <div className={styles.filter}></div>
     </section>
   )

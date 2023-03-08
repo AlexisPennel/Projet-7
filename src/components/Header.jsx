@@ -5,7 +5,7 @@ import Navigation from './Navigation'
 const Header = () => {
   return (
     <header className={styles.container}>
-      <img src={logo} alt="" />
+      <img src={logo} alt="logo Kasa" />
       <Navigation />
     </header>
   )

@@ -4,7 +4,7 @@ import arrowRight from '../images/arrowRight.svg';
 import { useEffect, useState } from 'react';
 
 
-const Carousel = ({ pictures }) => {
+const Carousel = ({ pictures, title }) => {
     const [current, setCurrent] = useState(0);
     const [bulletDisplay, setBulletDisplay] = useState(true);
     const length = pictures.length;
@@ -46,7 +46,7 @@ const Carousel = ({ pictures }) => {
                 {pictures.map((pictures, index) => {
                     return (
                         <div key={index} className={index === current ? styles.picture__active : styles.picture__inactive}>
-                            <img src={pictures} alt='' />
+                            <img src={pictures} alt={title} />
                         </div>
 
                     )
@@ -54,8 +54,8 @@ const Carousel = ({ pictures }) => {
             </div>
 
             {bulletDisplay && <div className={styles.arrows__container}>
-                <img src={arrowLeft} alt="" onClick={handlePrev} />
-                <img src={arrowRight} alt="" onClick={handleNext} />
+                <img src={arrowLeft} alt="Left arrow" onClick={handlePrev} />
+                <img src={arrowRight} alt="Right arrow" onClick={handleNext} />
             </div>}
 
             {bulletDisplay && <div className={styles.bulletPoints__container}>
