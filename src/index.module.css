@@ -10,13 +10,11 @@
 main {
   margin-left: 10%;
   margin-right: 10%;
+  min-height: calc(100vh - (5rem + 12rem));
 }
 
 body > div {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 h1,
@@ -44,6 +42,7 @@ a {
     height: 60%;
     margin-left: 5%;
     margin-right: 5%;
+    min-height: calc(100vh - (3rem + 10rem));
   }
 
   h1 {

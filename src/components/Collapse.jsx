@@ -7,6 +7,7 @@ import { useState } from 'react';
 const Collapse = ({ title, content }) => {
 
     const [collapseOpen, setCollapseOpen] = useState(false);
+
     const handleClick = () => {
         setCollapseOpen(!collapseOpen)
     };

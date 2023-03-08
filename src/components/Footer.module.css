@@ -4,7 +4,8 @@
   justify-content: center;
   align-items: center;
   background-color: var(--backgroundDark);
-  height: 20%;
+  height: 12rem;
+  margin-top: 2%;
 }
 
 .container img {

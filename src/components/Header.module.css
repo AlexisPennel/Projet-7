@@ -3,7 +3,7 @@
   margin-right: 10%;
   margin-top: 2%;
   margin-bottom: 2%;
-  height: 20%;
+  height: 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,8 +11,8 @@
 }
 
 .container img {
-  width: 15%;
-  height: 100%;
+  width: 15rem;
+  height: 5rem;
 }
 
 @media screen and (max-width: 1000px) {
@@ -24,6 +24,7 @@
   }
 
   .container img {
-    width: 60%;
+    width: 8rem;
+    height: 3rem;
   }
 }
