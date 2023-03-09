@@ -13,7 +13,6 @@ const Carousel = ({ pictures, title }) => {
     const checkPicturesLenght = () => {
         if (length === 1) {
             setBulletDisplay(false);
-            return
         }
     };
 

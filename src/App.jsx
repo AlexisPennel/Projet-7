@@ -14,9 +14,8 @@ const router = createBrowserRouter(
     createRoutesFromElements(
         <Route element={<BaseLayout />} errorElement={<ErrorPage />}>
             <Route path='/' element={<HomePage />} loader={getAccommodationsData} />
-            <Route path='details/:id' loader={({ params }) => {
-                return getAccommodationDataById(params.id)
-            }} element={<DetailsPage />} />
+            <Route path='details/:id' loader={getAccommodationDataById}
+                element={<DetailsPage />} />
             <Route path='apropos' element={<AboutPage />} loader={getAboutData} />
         </Route>
     )

@@ -4,7 +4,6 @@ import bannerImage from '../images/Banner.jpg'
 import CardsSection from '../components/CardsSection'
 import jsonData from '../data/logements.json'
 import { useLoaderData } from 'react-router-dom';
-import { useEffect } from 'react'
 
 
 const getAccommodationsData = () => {
@@ -14,9 +13,7 @@ const getAccommodationsData = () => {
 function HomePage() {
   const accommodationsData = useLoaderData();
 
-  useEffect(() => {
-    document.title = 'Kasa | Accueil';
-  }, []);
+  document.title = 'Kasa | Accueil';
 
   return (
     <>

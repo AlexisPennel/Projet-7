@@ -8,7 +8,7 @@ const Collapse = ({ title, content }) => {
 
     const [collapseOpen, setCollapseOpen] = useState(false);
 
-    const handleClick = () => {
+    const openCloseCollapses = () => {
         setCollapseOpen(!collapseOpen)
     };
 
@@ -16,7 +16,7 @@ const Collapse = ({ title, content }) => {
         <>
             <div className={styles.container}>
                 <h2>{title}</h2>
-                <img src={collapseOpen ? arrowUp : arrowDown} alt="arrow" onClick={handleClick} />
+                <img src={collapseOpen ? arrowUp : arrowDown} alt="arrow" onClick={openCloseCollapses} />
             </div>
             {collapseOpen && (
                 <div className={styles.content}>

@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -6,9 +5,8 @@ import styles from './Error.module.css';
 
 function ErrorPage() {
 
-  useEffect(() => {
-    document.title = 'Kasa | Erreur 404';
-  }, []);
+  document.title = 'Kasa | Erreur 404';
+
 
   return (
     <>

@@ -3,7 +3,7 @@ import Collapse from '../components/Collapse'
 import BannerAbout from '../images/BannerAbout.jpg'
 import styles from './About.module.css'
 import { useLoaderData } from 'react-router-dom'
-import { useEffect } from 'react'
+
 
 const getAboutData = () => {
   const dataAbout = [
@@ -19,9 +19,7 @@ const getAboutData = () => {
 function AboutPage() {
   const dataAbout = useLoaderData();
 
-  useEffect(() => {
-    document.title = `Kasa | A propos`;
-  }, []);
+  document.title = `Kasa | A propos`;
 
   return (
     <>
