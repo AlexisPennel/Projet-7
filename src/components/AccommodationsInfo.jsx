@@ -28,9 +28,6 @@ const AccommodationsInfo = ({ accommodationData }) => {
                     ))}
                 </div>
 
-
-
-                {/* <Rating ratingData={accommodationData.rating} /> */}
             </div>
         </>
     )
