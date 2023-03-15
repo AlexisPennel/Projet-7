@@ -1,8 +1,9 @@
+import styles from './Tag.module.css'
 
 const Tag = ({ element }) => {
     return (
         <>
-            <p>{element}</p>
+            <p className={styles.tag}>{element}</p>
         </>
     )
 };
