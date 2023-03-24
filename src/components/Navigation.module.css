@@ -1,0 +1,29 @@
+.container {
+  width: 85%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.container a {
+  margin-left: 7%;
+  color: var(--FontColor2);
+}
+
+.container a:hover {
+  text-decoration: underline;
+}
+
+.activeStyle {
+  text-decoration: underline;
+}
+@media screen and (max-width: 500px) {
+  .container {
+    align-items: center;
+    margin-top: 2%;
+  }
+
+  .container a {
+    text-transform: uppercase;
+    margin-right: 2%;
+  }
+}

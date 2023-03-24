@@ -1,0 +1,63 @@
+:root {
+  --backgroundDark: #000000;
+  --backgroundLight: #f6f6f6;
+  --FontColor1: #ffffff;
+  --FontColor2: #ff6060;
+  --PrimaryColor: #ff6060;
+  font-family: 'Montserrat', sans-serif;
+}
+
+main {
+  margin-left: 10%;
+  margin-right: 10%;
+  min-height: calc(100vh - (5rem + 12rem));
+}
+
+body > div {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+p,
+a {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 3rem !important;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+a {
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+  main {
+    height: 60%;
+    margin-left: 5%;
+    margin-right: 5%;
+    min-height: calc(100vh - (3rem + 10rem));
+  }
+
+  h1 {
+    font-size: 1.5rem !important;
+  }
+
+  h2 {
+    font-size: 1.1rem !important;
+  }
+
+  p {
+    font-size: 1rem !important;
+  }
+
+  a {
+    font-size: 0.8rem !important;
+  }
+}

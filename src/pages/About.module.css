@@ -1,0 +1,34 @@
+.collapse__section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+.collapse__container {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-self: center;
+}
+
+.collapse__container p {
+  font-size: 1.5rem !important;
+}
+
+@media screen and (max-width: 1000px) {
+  .collapse__container {
+    width: 100%;
+  }
+  .collapse__section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+  }
+
+  .collapse__container p {
+    font-size: 1rem !important;
+  }
+}

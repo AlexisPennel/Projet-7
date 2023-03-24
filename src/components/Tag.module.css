@@ -1,0 +1,15 @@
+.tag {
+  background-color: var(--PrimaryColor);
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 10px;
+  color: var(--FontColor1);
+  margin-right: 0.5rem;
+  font-size: 0.9rem !important;
+}
+
+@media screen and (max-width: 1000px) {
+  .tag {
+    font-size: 0.8rem !important;
+    padding: 0.3rem 0.8rem 0.3rem 0.8rem;
+  }
+}

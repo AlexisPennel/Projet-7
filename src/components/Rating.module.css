@@ -1,0 +1,10 @@
+.stars {
+  width: 2rem;
+  margin: 2%;
+}
+
+@media screen and (max-width: 1000px) {
+  .stars {
+    width: 1.2rem;
+  }
+}

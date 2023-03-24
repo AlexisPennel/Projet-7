@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--backgroundDark);
+  height: 12rem;
+  margin-top: 2%;
+}
+
+.container img {
+  height: 40px;
+  width: 122px;
+  padding: 50px;
+}
+
+.container p {
+  color: var(--FontColor1);
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    height: 10rem;
+  }
+
+  .container img {
+    padding: 20px;
+  }
+}
