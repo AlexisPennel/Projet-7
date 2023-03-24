@@ -9,19 +9,16 @@ const Carousel = ({ pictures, title }) => {
     const [bulletDisplay, setBulletDisplay] = useState(true);
     const length = pictures.length;
 
-    // Vérification du nombre de photos 
     const checkPicturesLenght = () => {
         if (length === 1) {
             setBulletDisplay(false);
         }
     };
 
-    // Appel de la fonction de vérification du nombre de photos au render
     useEffect(() => {
         checkPicturesLenght();
     })
 
-    // Événements flèches suivantes et précédentes
     const handlePrev = () => {
         const newIndex = current - 1;
         setCurrent(newIndex < 0 ? length - 1 : newIndex);
@@ -34,7 +31,6 @@ const Carousel = ({ pictures, title }) => {
 
     };
 
-    // Événement changement d'image Bullet point 
     const switchPicture = (index) => {
         setCurrent(index)
     }
@@ -47,7 +43,6 @@ const Carousel = ({ pictures, title }) => {
                         <div key={index} className={index === current ? styles.picture__active : styles.picture__inactive}>
                             <img src={pictures} alt={title} />
                         </div>
-
                     )
                 })}
             </div>
