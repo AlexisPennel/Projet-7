@@ -22,13 +22,11 @@ const Carousel = ({ pictures, title }) => {
     const handlePrev = () => {
         const newIndex = current - 1;
         setCurrent(newIndex < 0 ? length - 1 : newIndex);
-
     };
 
     const handleNext = () => {
         const newIndex = current + 1;
         setCurrent(newIndex === length ? 0 : newIndex);
-
     };
 
     const switchPicture = (index) => {
