@@ -4,6 +4,7 @@ import HomePage from './pages/Home';
 import ErrorPage from './pages/Error';
 import AboutPage from './pages/About';
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
+import { HashRouter as Router } from "react-router-dom";
 import DetailsPage from './pages/Details';
 import BaseLayout from './components/BaseLayout';
 import { getAccommodationsData } from './pages/Home';
@@ -23,7 +24,7 @@ const router = createBrowserRouter(
 
 const App = () => {
     return (
-        <RouterProvider router={router} />
+        <Router router={router} />
     );
 }
 export default App
